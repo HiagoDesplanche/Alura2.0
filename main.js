@@ -57,6 +57,9 @@ function geraSenha() {
         senha = senha + alfabeto[numeroAleatorio];
     }
     campoSenha.value = senha;
+    campoSenha.classList.remove('animar-senha');
+    void campoSenha.offsetWidth;
+    campoSenha.classList.add('animar-senha');
     classificaSenha(alfabeto.length);
 
 }
